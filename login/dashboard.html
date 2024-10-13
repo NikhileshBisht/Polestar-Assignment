@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Dashboard</title>
+  <link rel="stylesheet" href="dashcs.css">
+</head>
+<body>
+ 
+  <div class="main-container">
+
+    
+    <aside class="sidebar">
+      <div class="logo-container">
+        <img src="logo.png" alt="Polestar Logo" class="logo">
+      </div>
+      <ul class="menu-list">
+        <li><a href="#">📊 Overview</a></li>
+        <li><a href="#">𝄜  Entities</a></li>
+        <li><a href="#">🔌 Taxonomy</a></li>
+        <li><a href="#">☆ Masters</a></li>
+        <li><a href="#">⛓️ Pipelines</a></li>
+        <li><a href="#">🛠️ Workflow</a></li>
+        <li><a href="#">📝 Reports</a></li>
+        <li><a href="#">♖ Control Tower</a></li>
+      </ul>
+      <div class="settings">
+        <a href="#">⚙️ Settings</a>
+      </div>
+    </aside>
+ 
+    <div class="whiteimage"><img src="top.png"> </div>
+     <main class="content">
+      
+      <div class="header">
+        <h1>Pipelines Overview</h1>
+        <button class="new-pipeline-btn">New Pipeline</button>
+      </div>
+ 
+      <div class="overview-cards">
+        <div class="card">
+          <h2>Total Pipeline</h2>
+          <p class="number">254</p>
+          <img  src="plug.png" alt="image thi yaha ek">
+        </div>
+        <div class="card">
+          <h2>Scheduled Pipeline</h2>
+          <p class="number">124</p>
+          <div class="roll">
+            <img src="dash.png" alt="kuch to hai yaha">
+          </div>
+        </div>
+        <div class="card">
+          <h2>Total Trigger</h2>
+          
+          <span>  Success &nbsp  100 <br>
+           Failed &nbsp &nbsp &nbsp  30</span>
+           <div class="roll">
+            <img src="dash.png" alt="kuch to hai yaha">
+          </div>
+           
+        </div>
+        <div class="card">
+          <h2>Connections</h2>
+          
+          <span>  Success &nbsp  100 <br>
+            Failed &nbsp &nbsp &nbsp  30</span>
+          <div class="roll">
+            <img src="dash.png" alt="kuch to hai yaha">
+          </div>
+        </div>
+      </div>
+ 
+      <div class="tables">
+        
+        <div class="table-container">
+          <div class="table-header">
+            <h3>Upcoming Triggers</h3>
+            <a href="#">View all ⟶</a>
+          </div>
+          <table class="table">
+            <thead>
+              <tr class="highlight-row">
+                <th>Pipeline Name</th>
+                <th>Source Connection</th>
+                <th>Date & Time</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Amazon RDS</td>
+                <td> 📕 Amazon S3</td>
+                <td>12-04-2024, 15:28</td>
+                <td><button class="skip-btn">Skip</button></td>
+              </tr>
+              <tr>
+                <td>Amazon RDS</td>
+                <td>📘 Azure data lake..</td>
+                <td>12-04-2024, 15:28</td>
+                <td><button class="skip-btn">Skip</button></td>
+              </tr>
+              <tr>
+                <td>Amazon RDS</td>
+                <td>📘 Azure data lake..</td>
+                <td>12-04-2024, 15:28</td>
+                <td><button class="skip-btn">Skip</button></td>
+              </tr>
+              <tr>
+                <td>Amazon RDS</td>
+                <td>📕 Amazon S3</td>
+                <td>12-04-2024, 15:28</td>
+                <td><button class="skip-btn">Skip</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+         
+        <div class="table-container">
+          <div class="table-header">
+            <h3>Recent Triggers</h3>
+            <a href="#">View all ⟶</a>
+          </div>
+          <table class="table">
+            <thead>
+              <tr class="highlight-row">
+                <th>Pipeline Name</th>
+                <th>Source Connection</th>
+                <th>Date & Time</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Amazon RDS</td>
+                <td>📕 Amazon S3</td>
+                <td>12-04-2024, 15:28</td>
+                <td class="status-success">✅ Success</td>
+              </tr>
+              <tr>
+                <td>Amazon RDS</td>
+                <td>📘 Azure data lake..</td>
+                <td>12-04-2024, 15:28</td>
+                <td class="status-success">❌ Failed</td>
+              </tr>
+              <tr>
+                <td>Amazon RDS</td>
+                <td>📘 Azure data lake..</td>
+                <td>12-04-2024, 15:28</td>
+                <td class="status-success">✅ Success</td>
+              </tr>
+              <tr>
+                <td>Amazon RDS</td>
+                <td>📕 Amazon S3</td>
+                <td>12-04-2024, 15:28</td>
+                <td class="status-success">✅ Success</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+ 
+
+      <div class="pipeline-container">
+        <div class="filter-search">
+          <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#">All</a></li>
+                <li><a href="#">Active</a></li>
+                <li><a href="#">Inactive</a></li>
+                <li><a href="#">Scheduled</a></li>            
+            </ul>
+        </nav>
+             
+        <div class="filter">
+          <select id="filter">
+              <option value="All">Filter</option>
+          </select>
+      </div>
+      <div class="search">
+          <input type="text" placeholder="Search">
+      </div>
+  </div>
+        
+        <table class="table">
+          <thead>
+            <tr class="highlight-row">
+              <th>Pipeline Name</th>
+              <th>Source Connection</th>
+              <th>Target</th>
+              <th>Date & Time</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Amazon RDS</td>
+              <td>📕 Amazon S3</td>
+              <td>Customer</td>
+              <td>12-04-2024, 15:28</td>
+              <td >🖋️</td>
+            </tr>
+            <tr>
+              <td>Amazon RDS</td>
+              <td>📘 Azure data lake..</td>
+              <td>Customer</td>
+              <td>12-04-2024, 15:28</td>
+              <td >🖋️ 👁 📅</td>
+            </tr>
+            <tr>
+              <td>Amazon RDS</td>
+              <td>📘 Azure data lake..</td>
+              <td>Customer</td>
+              <td>12-04-2024, 15:28</td>
+              <td >🖋️ 👁</td>
+            </tr>
+            <tr>
+              <td>Amazon RDS</td>
+              <td>📕 Amazon S3</td>
+              <td>Customer</td>
+              <td>12-04-2024, 15:28</td>
+              <td  >🖋️</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+    
+    </main>
+  </div>
+
+</body>
+</html>
